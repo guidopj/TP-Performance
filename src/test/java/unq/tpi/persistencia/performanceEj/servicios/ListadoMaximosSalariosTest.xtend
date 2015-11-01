@@ -4,6 +4,8 @@ import org.junit.Test
 
 class ListadoMaximosSalariosTest extends BaseListadoTest {
 	
+	//7599
+	//3173
 	@Test
 	def void testListadoMaximosSalarios() {
 		val fileName = "./target/MaximosSalarios.csv"

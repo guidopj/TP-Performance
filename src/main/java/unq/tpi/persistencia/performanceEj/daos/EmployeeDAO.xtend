@@ -23,5 +23,13 @@ class EmployeeDAO {
 		val session = SessionManager.getSession()
 		session.load(Employee, id) as Employee
 	}
+	
+	def getXEmpleadosOrdSalarios(int i) {
+		val session = SessionManager.getSession()
+		val q = session.createQuery("select salary.employee from Salary salary order by salary.amount DESC")
+		//val q = session.createQuery("select salary.employee from Salary salary order by salary.amount")
+		q.maxResults = i 
+		q.list as List<Employee>
+	}
 
 }

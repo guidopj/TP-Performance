@@ -49,6 +49,7 @@ abstract class AbstractListado {
 	 * Las implementaciones de este metodo deberan interactuar con los metodos
 	 * addColumn y newLine para generar el reporte de forma correcta.
 	 */
+	
 	protected abstract def void doListado() throws Exception
 
 	private def openFileWriter() {
